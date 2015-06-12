@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/Hire-Forms/hire-forms-prop-types/issues"
   },
-  "homepage": "https://github.com/Hire-Forms/hire-forms-prop-types"
+  "homepage": "https://github.com/Hire-Forms/hire-forms-prop-types",
+  "peerDependencies": {
+    "react": "^0.13.3"
+  }
 }
