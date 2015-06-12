@@ -1,0 +1,16 @@
+{
+  "name": "hire-forms-prop-types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hire-Forms/hire-forms-prop-types.git"
+  },
+  "author": "gijsjan.brouwer@huygens.knaw.nl (https://github.com/Gijsjan)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hire-Forms/hire-forms-prop-types/issues"
+  },
+  "homepage": "https://github.com/Hire-Forms/hire-forms-prop-types"
+}
