@@ -1,10 +1,10 @@
 {
   "name": "hire-forms-prop-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "start": "babel src/index.js --watch --plugins object-assign --out-file build/index.js"
+    "start": "babel src/index.js --watch --plugins object-assign --out-file build/index.js",
     "bump": "hi-bump"
   },
   "repository": {
