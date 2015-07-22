@@ -1,6 +1,6 @@
 {
   "name": "hire-forms-prop-types",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "",
   "main": "build/index.js",
   "scripts": {
@@ -24,6 +24,6 @@
     "babel-core": "^5.5.8",
     "babel-plugin-object-assign": "^1.1.0",
     "babelify": "^6.1.2",
-    "hi-bump": "^1.0.0"
+    "hi-bump": "^1.1.1"
   }
 }
