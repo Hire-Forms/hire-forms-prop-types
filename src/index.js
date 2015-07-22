@@ -13,9 +13,9 @@ export const keyValueMap = React.PropTypes.shape({
 
 export const arrayOfKeyValueMaps = React.PropTypes.arrayOf(keyValueMap);
 
-export const arrayOfStrings = React.PropTypes.arrayOf(React.PropTypes.string)
+export const arrayOfStrings = React.PropTypes.arrayOf(React.PropTypes.string);
 
-export const arrayOfElements = React.PropTypes.arrayOf(React.PropTypes.element)
+export const arrayOfElements = React.PropTypes.arrayOf(React.PropTypes.element);
 
 export const stringOrKeyValueMap = React.PropTypes.oneOfType([
 	React.PropTypes.string,
