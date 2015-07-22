@@ -1,49 +1,38 @@
 import React from "react";
 
-export const elementOrArrayOfElement = React.PropTypes.oneOfType([
-	React.PropTypes.element,
-	React.PropTypes.arrayOf(React.PropTypes.element)
-]);
-
-/**
- * A string or an object,
- * example: {key: "somekey", value: "somevalue"}.
- */
-export const stringOrKeyValue = React.PropTypes.oneOfType([
-	React.PropTypes.string,
-	React.PropTypes.shape({
-		key: React.PropTypes.string,
-		value: React.PropTypes.string
-	})
-]);
-
 export const stringOrArray = React.PropTypes.oneOfType([
 	React.PropTypes.string,
 	React.PropTypes.array
 ]);
 
-export const stringOrArrayOfString = React.PropTypes.oneOfType([
+export const keyValueMap = React.PropTypes.shape({
+	key: React.PropTypes.string.isRequired,
+	value: React.PropTypes.string.isRequired
+});
+
+
+export const arrayOfKeyValueMaps = React.PropTypes.arrayOf(keyValueMap);
+
+export const arrayOfStrings = React.PropTypes.arrayOf(React.PropTypes.string)
+
+export const arrayOfElements = React.PropTypes.arrayOf(React.PropTypes.element)
+
+export const stringOrKeyValueMap = React.PropTypes.oneOfType([
 	React.PropTypes.string,
-	React.PropTypes.arrayOf(React.PropTypes.string)
+	keyValueMap
 ]);
 
-export const arrayOfKeyValue = React.PropTypes.arrayOf(
-	React.PropTypes.shape({
-		key: React.PropTypes.string.isRequired,
-		value: React.PropTypes.string.isRequired
-	})
-);
+export const elementOrArrayOfElement = React.PropTypes.oneOfType([
+	React.PropTypes.element,
+	arrayOfElements
+]);
 
-/**
- * An array of strings or an array of key/value objects,
- * example: [{key: "somekey", value: "somevalue"}].
- */
-export const arrayOfStringOrArrayOfKeyValue = React.PropTypes.oneOfType([
-	React.PropTypes.arrayOf(React.PropTypes.string),
-	React.PropTypes.arrayOf(
-		React.PropTypes.shape({
-			key: React.PropTypes.string,
-			value: React.PropTypes.string
-		})
-	)
+export const arrayOfStringsOrArrayOfKeyValueMaps = React.PropTypes.oneOfType([
+	arrayOfStrings,
+	arrayOfKeyValueMaps
+]);
+
+export const stringOrArrayOfStrings = React.PropTypes.oneOfType([
+	React.PropTypes.string,
+	arrayOfStrings
 ]);
