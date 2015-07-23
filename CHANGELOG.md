@@ -1,3 +1,8 @@
+### v2.0.1	(2015/7/23 13:47)
+* Add keyValueMapOrArrayOfKeyValueMaps
+* Add semicolons
+* Add BREAKING to last commit in README
+
 ### v2.0.0	(2015/7/22 16:7)
 * Rearrange and rename (BREAKING)
 
