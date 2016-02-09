@@ -4,7 +4,7 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "start": "babel src/index.js --watch --plugins object-assign --out-file build/index.js",
+    "start": "scripts/watch.sh",
     "bump": "hi-bump"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "babel-core": "^5.5.8",
     "babel-plugin-object-assign": "^1.1.0",
     "babelify": "^6.1.2",
-    "hi-bump": "^1.1.1"
+    "hi-bump": "^1.1.1",
+    "watchify": "^3.7.0"
   }
 }
